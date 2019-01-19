@@ -1,8 +1,7 @@
-describe("dummy test", () => {
-  it("breaks", () => {
-    /// break on me
-    const breakpoint = 1;
+import { sampleFunction } from "../index";
 
-    expect(breakpoint).toBe(1);
+describe("This is a simple test", () => {
+  test("Check the sampleFunction function", () => {
+    expect(sampleFunction("hello")).toEqual("hellohello");
   });
 });
